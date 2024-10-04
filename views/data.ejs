@@ -1,0 +1,87 @@
+<!-- 
+ Question- 1 : Create a ```GET``` endpoint that retrieves all patients
+<table>
+    <thead>
+        <tr>
+            <th> Patient Id</th>
+            <th> First Name</th>
+            <th> Last Name</th>
+            <th> Date of birth</th>
+        </tr>
+    </thead>
+    <% results.forEach(row =>{%>
+    
+        <tbody>
+            <tr>
+              <td> <%= row.patient_id%> </td>
+              <td> <%= row.first_name%> </td>
+              <td> <%= row.last_name%> </td>
+              <td> <%= row.date_of_birth%> </td>
+            </tr>
+          </tbody>
+          
+    
+    <%});%>
+    
+    </table> -->
+
+<!--  Question- 2 : Create a ```GET``` endpoint that retrieves all provides
+
+    <table>
+    
+        <thead>
+            <tr>
+                <th> First Name</th>
+                <th> Last Name</th>
+                <th> Provider Speciality</th>
+            </tr>
+        </thead>
+        <% results.forEach(row =>{%>
+        <tbody>
+            <tr>
+                <td> <%= row.first_name%> </td>
+                <td> <%= row.last_name%> </td>
+                <td> <%= row.provider_specialty%> </td>
+            </tr>
+        </tbody>
+        <%});%>
+    </table> -->
+
+ <!-- Create a ```GET``` endpoint that retrieves all patients by their first name -->
+<!-- 
+<table>
+
+    <thead>
+        <tr>
+            <th>First Name</th>
+        </tr>
+    </thead>
+    <% results.forEach(row=>{%>
+        <tbody>
+            <tr>
+                <td>
+                    <%= row.first_name%>
+                </td>
+            </tr>
+        </tbody>
+
+        <%});%>
+</table> -->
+
+<!-- Question- 4 Create a ```GET``` endpoint that retrieves all providers by their specialty -->
+
+<table>
+
+<thead>
+    <tr>
+        <td> Provider Speciality</td>
+    </tr>
+</thead>
+<% results.forEach(row=>{%>
+<tbody>
+    <tr>
+        <td><%= row.provider_specialty%> </td>
+    </tr>
+</tbody>
+<%});%>
+</table>
